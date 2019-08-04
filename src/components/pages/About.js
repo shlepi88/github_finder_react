@@ -1,0 +1,12 @@
+import React from 'react';
+
+const About = () => {
+    return ( 
+        <div>
+            <h1>This is the About page</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci autem, veniam illo explicabo debitis, dolorem excepturi sit aut praesentium quidem asperiores officiis incidunt possimus sapiente quisquam saepe? Corporis accusantium aliquid nemo magni labore eum, exercitationem sapiente maxime quaerat rerum ipsum minima optio amet voluptatem odit natus quidem quo voluptas sed. Labore sunt architecto eum quibusdam non inventore dolores ullam culpa at numquam quasi cum fugit, quod veritatis perferendis ab nesciunt molestias quia laboriosam. Voluptas suscipit perferendis quod qui veniam aut odit culpa laudantium facilis. Dolorum cum necessitatibus saepe nihil amet at natus, sequi, nostrum soluta fuga omnis id tempora veniam ex incidunt. Culpa, ratione saepe. Deleniti similique, possimus harum earum neque aspernatur cupiditate reiciendis vitae. Voluptatem dolor voluptatum architecto. Consectetur et expedita corporis libero omnis distinctio vel magni? Nisi numquam, provident odio quos, voluptatem quasi sed, blanditiis ea possimus similique in vero dicta reprehenderit! Omnis velit placeat dignissimos possimus, porro explicabo qui ex voluptate, inventore cum iste ad vitae, consequatur repellendus assumenda suscipit! Iusto quibusdam tempore fugiat provident, commodi animi odit modi itaque! Excepturi aliquam non tenetur sint! Odio dolore vero obcaecati reprehenderit totam dignissimos cupiditate esse magni sequi, nostrum, natus laborum? Recusandae quidem error explicabo debitis, porro pariatur distinctio architecto ullam velit consectetur sit quo nam, assumenda incidunt earum optio molestias quos perspiciatis tempore quis vitae! Delectus maiores incidunt, hic nostrum consequatur totam est consequuntur magnam repellendus ab. Optio expedita culpa consequuntur similique quam iusto minima aliquam dicta deleniti animi libero, rem doloribus error adipisci maxime! Non ea nemo corrupti asperiores maxime sit numquam nostrum atque quo labore obcaecati beatae, est nesciunt ullam ipsum voluptate perferendis aliquam nobis quod odio libero tempore debitis reprehenderit eligendi. Consequuntur molestiae asperiores fugiat placeat quae eius ex eaque a. Suscipit eius dicta, harum dolore, accusantium placeat accusamus odit repellendus itaque laboriosam quidem corrupti?</p>
+        </div>
+    );
+}
+ 
+export default About;
