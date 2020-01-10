@@ -1,35 +1,45 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+import IconButton from "@material-ui/core/IconButton";
+import GitHubIcon from "@material-ui/icons/GitHub";
 
-const Navbar = (props) => {
-    const { title, icon } = props;
-    return ( 
-        <nav className="navbar bg-primary">
-            <h1>
-                <i className={icon} />{' '}
-                {title}
-            </h1>
-            <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/about">About</Link>
-                </li>
-            </ul>
-        </nav>
-    );
-}
+const useStyles = makeStyles(theme => ({
+  root: {
+    flexGrow: 1
+  },
+  menuButton: {
+    marginRight: theme.spacing(2)
+  },
+  title: {
+    flexGrow: 1
+  }
+}));
 
-Navbar.defaultProps = {
-    title: 'Github Finder',
-    icon: 'fab fa-github'
+const Navbar = () => {
+  const classes = useStyles();
+
+  return (
+    <div className={classes.root}>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton
+            edge="start"
+            className={classes.menuButton}
+            color="inherit"
+            aria-label="menu"
+          >
+            <GitHubIcon />
+          </IconButton>
+          <Typography variant="h6" className={classes.title}>
+            GitHub Finder
+          </Typography>
+        </Toolbar>
+      </AppBar>
+    </div>
+  );
 };
 
-Navbar.propTypes = {
-    title: PropTypes.string.isRequired,
-    icon: PropTypes.string.isRequired,
-};
- 
 export default Navbar;
